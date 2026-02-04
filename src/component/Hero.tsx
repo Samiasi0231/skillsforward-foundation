@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
+import type { Variants } from 'framer-motion';
 import { ArrowRight, Zap } from 'lucide-react';
 
 export const Hero = () => {
-  const containerVariants = {
+  // --- Motion Variants ---
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -13,7 +15,7 @@ export const Hero = () => {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
